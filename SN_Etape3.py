@@ -19,7 +19,7 @@ df = pd.read_csv('plant_disease_dataset.csv')
 data = pd.read_csv('dataset_machine_learning.csv')
 model_xgb = pickle.load(open('plant_disease_model_xgb.sav', 'rb'))
 
-st.sidebar.image('Photos\images2.jpg',width=200)
+st.sidebar.image('Photos/images2.jpg',width=200)
 
 def main():
     st.markdown("<h1 style='text-align:center;color: green;'>PLANT DISEASES APP</h1>",unsafe_allow_html=True)
@@ -28,18 +28,18 @@ def main():
 
     if choice=='Accueil':
         st.header('A propos des maladies des plantes ?')
-        st.image('Photos\disease.jpg')
+        st.image('Photos/disease.jpg')
         st.write("Chez les plantes, la maladie est un état phénotypique anormal, qui présente des écarts, appelés « symptômes », par rapport au phénotype normal attendu, et qui réduit la croissance de la plante, sa productivité et son utilité pour l'homme.")
         st.write("Les maladies des plantes sont des problèmes courants en agriculture et jardinage, car elles peuvent affecter la croissance, le rendement et la santé des végétaux. Parmi les maladies les plus fréquentes, on trouve la brûlure (blight), la rouille (rust) et la moisissure (mildew).")
         st.write("Voici une brève description de chacune de ces maladies :\n")
         st.write("\n\n**La moisissure (mildew)**")
-        st.image('Photos\mildew.jpg', caption='Moisissure (Mildew)')
+        st.image('Photos/mildew.jpg', caption='Moisissure (Mildew)')
         st.write("\nLa moisissure est une maladie fongique qui affecte principalement les feuilles des plantes. Elle se manifeste par une poudre blanche ou grise sur la surface des feuilles, qui peut entraîner le jaunissement, le flétrissement et la chute prématurée des feuilles.")
         st.write("\n\n**La brûlure (blight)**")
-        st.image('Photos\Blight.jpg', caption='Brûlure (Blight)')
+        st.image('Photos/Blight.jpg', caption='Brûlure (Blight)')
         st.write("\nLa brûlure est une maladie fongique qui provoque le flétrissement et la mort rapide des feuilles, des tiges et des fruits. Elle se manifeste par des taches brunes ou noires sur les feuilles, qui s'étendent rapidement et peuvent entraîner la chute prématurée des feuilles.\n")
         st.write("\n\n**La rouille (rust)**")
-        st.image('Photos\Rust.jpg', caption='Rouille (Rust)')
+        st.image('Photos/Rust.jpg', caption='Rouille (Rust)')
         st.write("\nLa rouille est une maladie fongique qui affecte principalement les feuilles des plantes. Elle se manifeste par des pustules orange, jaunes ou brunes sur la surface des feuilles, qui peuvent entraîner le jaunissement, le flétrissement et la chute prématurée des feuilles.")
 
     elif choice=='Analyses':
@@ -143,3 +143,4 @@ def main():
 if __name__== '__main__':
 
     main()
+
